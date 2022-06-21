@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.todo{
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(6,0,112,1) 0%, rgba(71,140,255,1) 53%, rgba(150,226,255,1) 100%);
+
+    .auth{
+        padding: 40px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    
+        &__link{
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+    .todoAdd{
+    
+    
+        &__title{
+    
+        }
+    
+        &__form{
+    
+        }
+    
+        &__input{
+    
+        }
+    
+        &__submit{
+    
+        }
+    }
+    
+    .main{
+    
+        &__title{
+    
+        }
+        .todoList{
+        
+            &__item{
+        
+            
+            }
+    
+            &__title{
+            
+            }
+    
+            &__button {
+                
+            }
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.todo {
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgb(6, 0, 112) 0%, rgb(71, 140, 255) 53%, rgb(150, 226, 255) 100%);
+}
+.todo .auth {
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.todo .auth__link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
