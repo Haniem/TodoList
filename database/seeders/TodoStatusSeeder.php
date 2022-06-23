@@ -18,11 +18,15 @@ class TodoStatusSeeder extends Seeder
 
 
         TodoStatus::create([
-            'todo_status_name' => 'Активеная задача',
+            'todo_status_name' => 'Активная задача',
         ]);
 
         TodoStatus::create([
             'todo_status_name' => 'Выполненная задача',
+        ]);
+
+        TodoStatus::create([
+            'todo_status_name' => 'Задача завершена',
         ]);
     }
 }

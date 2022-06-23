@@ -4,68 +4,185 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+body, html {
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(75,255,211,1) 0%, rgba(8,149,175,1) 100%);
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
 }
 
-.todo{
-    min-height: 100vh;
-    background: linear-gradient(90deg, rgba(6,0,112,1) 0%, rgba(71,140,255,1) 53%, rgba(150,226,255,1) 100%);
+.authBtns{
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 
-    .auth{
-        padding: 40px 50px;
+    .countDone {
+        flex-grow: 2;
+    }
+
+    &__link{
+        font-size: 20px;
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: white;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}
+
+.todoAdd{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        margin-bottom: 30px;
+    }
+
+    &__form{
         display: flex;
         align-items: center;
-        justify-content: end;
-    
-        &__link{
-            margin-right: 10px;
-            text-decoration: none;
+    }
+
+    &__input{
+        width: 50vh;
+        padding: 10px 20px;
+    }
+
+    &__submit{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
+.main{
+width: 70%;
+margin: 0 auto;
+
+    .closed {
+
+        .todoList__title {
+            
+            text-decoration: line-through;
+        }
+    }
+
+    .todoList{
+        width: 100%;
+
+        &__item{
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__title{
+            flex-grow: 2;
+        }
+
+        &__date{
+
+            margin-right: 15px;
+            padding: 10px 15px;
+        }
+
+        &__acceptBtn{
+            margin-right: 15px;
+            padding: 10px 15px;
+            background-color: #fff;
             color: black;
-        }
-    }
-    
-    .todoAdd{
-    
-    
-        &__title{
-    
-        }
-    
-        &__form{
-    
-        }
-    
-        &__input{
-    
-        }
-    
-        &__submit{
-    
-        }
-    }
-    
-    .main{
-    
-        &__title{
-    
-        }
-        .todoList{
-        
-            &__item{
-        
-            
-            }
-    
-            &__title{
-            
-            }
-    
-            &__button {
+            border: 2px solid #fff;
+            border-radius: 3px;
+            cursor: pointer;
+
+            &:hover{
                 
+                border: 2px solid rgb(82, 255, 255);
+                background-color: rgb(82, 255, 255);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        &__deleteBtn{
+            padding: 10px 15px;
+            background-color: transparent;
+            color: rgb(255, 142, 142);
+            border: 2px solid rgb(255, 142, 142);
+            border-radius: 3px;
+            cursor: pointer;
+
+            &:hover{
+                
+                background-color: rgb(255, 142, 142);
+                color: #fff;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        &__againBtn {
+            margin-right: 15px;
+            padding: 10px 15px;
+            background-color: transparent;
+            color: rgb(41, 62, 255);
+            border: 2px solid rgb(41, 62, 255);
+            border-radius: 3px;
+            cursor: pointer;
+
+            &:hover{
+                
+                background-color: rgb(41, 62, 255);
+                color: #fff;
+                transition: all 0.2s ease-in-out;
             }
         }
     }
+}
+
+
+.auth{
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: 35px;
+    }
+    .authForm{
+        width: 60%;
+
+        &__group{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__label{
+            padding: 15px 0 5px 15px;
+        }
+
+        &__input{
+            padding: 15px 15px;
+            font-size: 15px;
+        }
+
+        &__submit{
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    }
+    
 }
 

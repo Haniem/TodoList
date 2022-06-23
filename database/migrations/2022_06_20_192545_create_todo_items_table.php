@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('todo_name', 256);
             $table->foreignId('user_id')->references('id')->on('users');
-            $table->foreignId('todo_status')->references('id')->on('todo_statuses');
+            $table->foreignId('todo_status_id')->references('id')->on('todo_statuses');
             $table->timestamps();
         });
     }
